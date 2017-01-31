@@ -1,0 +1,14 @@
+<========SUCCESSFUL========>
+DATE-TIME:2016-04-25 08:17:39
+USER:jayr
+QUERY:UPDATE FDCFINANCIALS_PC.THEME SET THEME = 'lightness',MAIN_BACKGROUND='ui-widget-content',CONTENT_BACKGROUND='ui-widget-content'
+							 WHERE USERNAME = 'jayr'
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-04-25 08:17:58
+USER:jayr
+QUERY:UPDATE FDCFINANCIALS_PC.THEME SET THEME = 'darkness',MAIN_BACKGROUND='ui-widget-content',CONTENT_BACKGROUND='ui-widget-content'
+							 WHERE USERNAME = 'jayr'
+<============END===========>
+

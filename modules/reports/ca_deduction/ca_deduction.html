@@ -1,0 +1,32 @@
+<br>
+<table class="div-new-trx" width="40%">
+	<tr>
+		<td class="td-content-title" colspan="20">Cash Advance Deductions Report</td>
+	</tr>
+	<tr>
+		<td align="center">
+			<table>
+				<tr>
+					<td class="label_text">Date</td>
+					<td class="label_text">
+						:<input type="text" name="txtdate" id="txtdate" size="13"  class="input_text centered curved5px" readonly value="<?php echo date('F d, Y'); ?>">
+					</td>
+				</tr>
+					<tr>
+					<td class="label_text">Department</td>
+					<td class="label_text">
+					:<?php echo $DATASOURCE->getDropDown($conn_172,PCDBASE,"DEPARTMENTS","input_text curved5px","seldep","DEP_DESCRIPTION","DEP_DESCRIPTION","DEP_DESCRIPTION","1 ORDER BY DEP_DESCRIPTION","");?>
+					</td>
+				</tr>
+				<tr>
+					<td class="label_text">&nbsp;</td>
+					<td class="label_text">
+						<img src="/PETTY_CASH/images/generate.png" id="btngenerate" class="imgbuttons shadowed tooltips">
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+		
+</table>
+<div id="divdebug"></div>

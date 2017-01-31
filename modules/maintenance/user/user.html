@@ -1,0 +1,113 @@
+<table border="0" class="tblsearch">
+	<tr>
+		<td class="label_text" align="right">
+			<input type="text" id="txtsearch" name="txtsearch" size="50" placeholder = 'Search Employee' title="Employee's Username/Name/Department/Status(Wild Search)" class="input_text centered curved30px tooltips">
+		</td>
+		<td align="left">
+			<img src="/PETTY_CASH/images/search1.png" id="btnsearch" class="smallimgbuttons tooltips" title="Search">
+		</td>
+	</tr>
+</table>
+<img src='/PETTY_CASH/images/new.png' id="btnnew"	class='imgbuttons shadowed tooltips' alt='Deactivate' 	title='New Employee'>
+<div id="divtrxuser" style="display:none;">
+	<form id="frmuser">
+		<table class="div-new-trx" width="50%">
+			<tr>
+				<td class="td-content-title" colspan="20">User Information</td>
+			</tr>
+			<tr>
+				<td align="center" class="padding">
+					<table>
+						<tr>
+							<td class="label_text">Name</td>
+							<td class="label_text">:</td>
+							<td class="label_text">
+								<input type="text" name="txtname" id="txtname" size="40"  class="input_text curved5px">
+							</td>
+						</tr>
+						<tr>
+							<td class="label_text">Username</td>
+							<td class="label_text">:</td>
+							<td class="label_text"><input type="text" name="txtusername" id="txtusername" size="40"  class="input_text curved5px"></td>
+						
+						</tr>
+						<tr>
+							<td class="label_text">Password</td>
+							<td class="label_text">:</td>
+							<td class="label_text"><input type="password" name="txtpassword" id="txtpassword" size="40"  class="input_text curved5px"></td>
+						</tr>
+						<tr>
+							<td class="label_text">Confirm Password</td>
+							<td class="label_text">:</td>
+							<td class="label_text"><input type="password" name="txtcpassword" id="txtcpassword" size="40"  class="input_text curved5px"></td>
+						</tr>
+						<tr>
+							<td class="label_text">Email Address</td>
+							<td class="label_text">:</td>
+							<td class="label_text"><input type="text" name="txteadd" id="txteadd" size="40"  class="input_text curved5px"></td>
+						</tr>
+						<tr>
+							<td class="label_text">Department</td>
+							<td class="label_text">:</td>
+							<td class="label_text">
+								<?php echo $DATASOURCE->getDropDown($conn_172,PCDBASE,"USERS","input_text curved5px","seldep","DEPARTMENT","DEPARTMENT","DEPARTMENT","1 GROUP BY DEPARTMENT","");?>
+							</td>
+						</tr>
+						<tr>
+							<td class="label_text">Position</td>
+							<td class="label_text">:</td>
+							<td class="label_text">
+								<?php // echo $DATASOURCE->getDropDown($conn_172,PCDBASE,"POSITION","input_text curved5px","txtposition","ID,DESCRIPTION","DESCRIPTION","DESCRIPTION","1 ORDER BY DESCRIPTION","");?>
+								<input type="text" name="txtposition" id="txtposition" size="30"  class="input_text curved5px">
+							</td>
+						</tr>
+						<tr>
+							<td class="label_text">User Level</td>
+							<td class="label_text">:</td>
+							<td class="label_text">
+									<select name="sellevel" id="sellevel" class="input_text curved5px">
+										<option value="">--Please Select--</option>
+										<option value="Manager">Manager</option>
+										<option value="Supervisor">Supervisor</option>
+										<option value="Employee">Employee</option>
+									</select>
+							</td>
+						</tr>
+						<tr>
+							<td class="label_text">Status</td>
+							<td class="label_text">:</td>
+							<td class="label_text">
+								<select name="selstatus" id="selstatus" class="input_text curved5px">
+									<option value="">--Please Select--</option>
+									<option value="Active">Active</option>
+									<option value="Inactive">Inactive</option>
+								</select>
+							</td>	
+						</tr>
+						<tr>
+							<td class="label_text">Custodian</td>
+							<td class="label_text">:</td>
+							<td class="label_text" id="tdcustodian">
+								<span class="radioset"><input type="radio" name="optcustodian"  id="rdoYES" 	class="input_text curved5px" value="YES"><label for="rdoYES">Yes</label>
+								 						<input type="radio" name="optcustodian"  id="rdoNO" 	class="input_text curved5px" value="NO"><label for="rdoNO">No</label>
+								</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="label_text"></td>
+							<td class="label_text"></td>
+							<td class="label_text">
+								<img src="/PETTY_CASH/images/save1.png" 	id="btnsave"	class="imgbuttons shadowed tooltips">
+								<img src="/PETTY_CASH/images/update1.png" 	id="btnupdate"	class="imgbuttons shadowed tooltips" style="display:none;">
+								<img src="/PETTY_CASH/images/cancel1.png"  	id="btncancel" 	class="imgbuttons shadowed tooltips">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+
+<div id="divusers"></div>
+<div id="divdebug"></div>

@@ -1,0 +1,7 @@
+<========SUCCESSFUL========>
+DATE-TIME:2016-06-09 08:30:46
+USER:jayr
+QUERY:UPDATE FDCFINANCIALS_PC.THEME SET THEME = 'cupertino',MAIN_BACKGROUND='',CONTENT_BACKGROUND=''
+							 WHERE USERNAME = 'jayr'
+<============END===========>
+

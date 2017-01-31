@@ -1,0 +1,73 @@
+<br>
+<table class="div-new-trx" width="45%">
+	<tr>
+		<td class="td-content-title">CA DETAILS</td>
+	</tr>
+	<tr>
+		<td align="center">
+			<form id = 'frmpass' action="ca_detailed_CSV.php" method="POST" target="_blank">
+				<table>
+						<tr>
+							<td class="label_text">Report Scope</td>
+							<td class="label_text">:</td>
+							<td class="label_text">
+								<select id="selscope" name="selscope" class="input_text curved5px">
+									<option value="DEP">PER DEPARTMENT</option>
+									<option value="EMP">PER EMPLOYEE</option>
+								</select>
+							</td>
+						</tr>
+						<tr class="CDEP">
+							<td class="label_text">Department</td>
+							<td class="label_text">:</td>
+							<td class="label_text">
+									<?php echo $DATASOURCE->getDropDown($conn_172,PCDBASE,"DEPARTMENTS","input_text curved5px","seldep","DEP_DESCRIPTION","DEP_DESCRIPTION","DEP_DESCRIPTION","1 ORDER BY DEP_DESCRIPTION","");?>
+							</td>
+						</tr>
+						
+						<tr  class="CDEP">
+							<td class="label_text">Date Range</td>
+							<td class="label_text">:</td>
+							<td class="label_text">
+								<input type="text" id="txtfrom" name="txtfrom" class="dates input_text curved5px centered" size="13" placeholder="From"> to 
+								<input type="text" id="txtto" name="txtto" class="dates input_text curved5px centered" size="13" placeholder="To">
+							</td>
+						</tr>
+						<tr class="CEMP"  style="display:none;">
+							<td class="label_text">Employee</td>
+							<td class="label_text">:</td>
+							<td class="label_text">
+								<input type="text" id="txtempid" name="txtempid" size="10" placeholder='ID'class="input_text curved5px centered txtemployee">
+								<input type="text" id="txtname" name="txtname" size="30" placeholder='NAME' class="input_text curved5px  centered txtemployee">
+								<div id="divselemp"></div>
+								<input type="hidden" id="hdnval" name="hdnval" value="">
+							</td>
+						</tr>
+						<tr class="CEMP"  style="display:none;">
+							<td class="label_text">Year</td>
+							<td class="label_text">:</td>
+							<td class="label_text">
+								<select class="yearpicker input_text curved5px" id="selyear" name="selyear"></select>
+							</td>
+						</tr>
+						<!--<tr>
+							<td class="label_text">Chart Type</td>
+							<td class="label_text">:</td>
+							<td class="label_text">
+								<select id="selchart" name="selchart" class="input_text curved5px">
+									<option value="BOTH">PIE AND BAR</option>
+									<option value="PIE">PIE</option>
+									<option value="BAR">BAR</option>
+								</select>
+							</td>
+						</tr>-->
+						<tr>
+							<td class="label_text">&nbsp;</td>
+							<td class="label_text"></td>
+							<td><input type="image" src="/PETTY_CASH/images/generate.png" name="btngenerate" id="btngenerate" class="imgbuttons shadowed tooltips"></td>
+						</tr>
+				</table>
+			</form>	
+		</td>
+	</tr>
+</table>

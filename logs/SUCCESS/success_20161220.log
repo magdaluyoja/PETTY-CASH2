@@ -1,0 +1,356 @@
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 12:18:47
+USER:JAYR A. MAGDALUYO
+QUERY:UPDATE FDCFINANCIALS_PC.CASH_ADVANCE_HDR SET ISLIQUIDATED = 'Y', LIQUIDATEDDT = '2016-12-20 12:18:47' WHERE CA_NO = 'IT-20161202-001'
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 12:18:48
+USER:JAYR A. MAGDALUYO
+QUERY:UPDATE FDCFINANCIALS_PC.LIQUIDATION_HDR SET STATUS = 'LIQUIDATED',LIQUIDATEDBY = 'JAYR A. MAGDALUYO', LIQUIDATEDDT = '2016-12-20 12:18:47', 
+								 APPROVED_AMT = '50', VAT_AMT = '6', REIMBURSEMENT_AMT = '0', RETURNING_AMT = '50' 
+								 WHERE CA_NO = 'IT-20161202-001'
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 12:18:48
+USER:JAYR A. MAGDALUYO
+QUERY:UPDATE FDCFINANCIALS_PC.LIQUIDATION_DTL SET APRROVEDAMT = '50', VATABLE = 'YES', VAT_TYPE = 'GOODS', 
+									 COMP_NAME = 'JOLLIBEE', COMP_ADD = 'KAPITOLYO', COMP_TIN = '10011221', VAT_AMT = '6' 
+									 WHERE CA_NO = 'IT-20161202-001' AND PARTICULAR = '0001' AND REMARK = '2'
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:21
+USER:jayr
+QUERY:DELETE FROM FDCFINANCIALS_PC.USER_ACCESS WHERE USERNAME = 'jayr'
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','cash_advance','jayr','2016-12-20 01:46:21')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','ca_approval','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','ca_issuance','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','ca_recall','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','ca_request','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','liquidation','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','li_approval','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','li_filing','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','li_liquidate','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','li_reimbursement','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','maintenance','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','mn_approver','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','mn_approverHR','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','mn_dayslimit','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','mn_holidays','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','mn_menu','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','mn_password','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','mn_theme','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:46:22
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','mn_user','jayr','2016-12-20 01:46:22')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:DELETE FROM FDCFINANCIALS_PC.USER_ACCESS WHERE USERNAME = 'jayr'
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','cash_advance','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','ca_approval','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','ca_issuance','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','ca_recall','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','ca_request','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','liquidation','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','li_approval','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','li_filing','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','li_liquidate','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','li_reimbursement','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','maintenance','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','mn_approver','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','mn_approverHR','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','mn_dayslimit','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','mn_holidays','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','mn_menu','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','mn_password','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','mn_theme','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','mn_user','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','reimbursement','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','re_approval','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','re_filing','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','re_issuance','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','re_recall','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','rpreports','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','rp_deduction','jayr','2016-12-20 01:47:46')
+<============END===========>
+
+<========SUCCESSFUL========>
+DATE-TIME:2016-12-20 01:47:46
+USER:jayr
+QUERY:INSERT INTO FDCFINANCIALS_PC.USER_ACCESS(`USERNAME`, `LINK_ID`, `MODIFIED_BY`, `MODIFIED_DATE`)
+		       							 VALUES('jayr','rp_summary','jayr','2016-12-20 01:47:46')
+<============END===========>
+

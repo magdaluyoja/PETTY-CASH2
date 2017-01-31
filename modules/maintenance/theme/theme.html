@@ -1,0 +1,127 @@
+<h2 class="demoHeaders">Theme</h2>
+<select id="seltheme" name="seltheme" class="selectmenus" style="width:300px;text-align:center;">
+	<option value=""><-- Please Select Theme --></option>
+		<option value="lightness">Lightness</option>
+		<option value="darkness">Darkness</option>
+		<option value="smoothness">Smoothness</option>
+		<option value="bike">Bike</option>
+		<option value="blitzer">Blitzer</option>
+		<option value="cupertino">Cupertino</option>
+		<option value="darkhive">Darkhive</option>
+		<option value="eggplant">Eggplant</option>
+		<option value="flick">Flick</option>
+		<option value="hotsneaks">Hotsneaks</option>
+		<option value="humanity">Humanity</option>
+		<option value="lefrog">Lefrog</option>
+		<option value="overcast">Overcast</option>
+		<option value="pepper">Pepper</option>
+		<option value="redmond">Redmond</option>
+		<option value="start">Start</option>
+		<option value="street">Street</option>
+		<option value="sunny">Sunny</option>
+		<option value="vader">Vader</option>
+		<option value="blue">Blue</option>
+		<option value="dotluv">Dotluv</option>
+		<option value="trontastic">Trontastic</option>
+		<option value="mintchoc">Mintchoc</option>
+		<option value="blacktie">Blacktie</option>
+		<option value="swankie">Swankie</option>
+</select>
+<h2 class="demoHeaders">Main Background Option</h2>
+<select id="selmainback" name="selmainback" class="selectmenus" style="width:270px;text-align:center;">
+	<option value="ui-widget-content">By Theme</option>
+	<option value="">Original</option>
+</select>
+<h2 class="demoHeaders">Content Background Option</h2>
+<select id="selcontentback" name="selcontentback" class="selectmenus" style="width:230px;text-align:center;">
+	<option value="ui-widget-content">By Theme</option>
+	<option value="">Original</option>
+</select>
+<br><br><br>
+<input type="button" name="btnsubmit" id="btnsubmit" value="SET" class="buttons">
+<div id="divtheme"></div>
+	<style>
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	.buttons
+	{
+		width:200px;
+		height:40px;
+	}
+	</style>
+	<h2 class="demoHeaders">Dialog</h2>
+	<p><a href="#" id="dialog-link" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-newwin"></span>Open Dialog</a></p>
+	
+	<!-- ui-dialog -->
+	<div id="dialog" title="Dialog Title">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+	<h2 class="demoHeaders">Datepicker</h2>
+	<div id="datepicker"></div>
+	<h2 class="demoHeaders">Tooltip</h2>
+	<p id="tooltip">
+		<a href="#" title="That&apos;s what this widget is">Tooltips</a> can be attached to any element. When you hover
+	the element with your mouse, the title attribute is displayed in a little box next to the element, just like a native tooltip.
+	</p>
+	<h2 class="demoHeaders">Highlight / Error</h2>
+	<div class="ui-widget">
+		<div class="ui-state-highlight ui-corner-all" style="margin-top: 20px; padding: 0 .7em;">
+			<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+			<strong>Hey!</strong> Sample ui-state-highlight style.</p>
+		</div>
+	</div>
+	<br>
+	<div class="ui-widget">
+		<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+			<p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+			<strong>Alert:</strong> Sample ui-state-error style.</p>
+		</div>
+</div>
+<br><br><br>
+<script>
+	$( "#dialog" ).dialog({
+		autoOpen: false,
+		width: 400,
+		buttons: [
+			{
+				text: "Ok",
+				click: function() {
+					$( this ).dialog( "close" );
+				}
+			},
+			{
+				text: "Cancel",
+				click: function() {
+					$( this ).dialog( "close" );
+				}
+			}
+		]
+	});
+	
+	// Link to open the dialog
+	$( "#dialog-link" ).click(function( event ) {
+		$( "#dialog" ).dialog( "open" );
+		event.preventDefault();
+	});
+	
+	$( "#datepicker" ).datepicker({
+		inline: true,
+		dateFormat: 'yy-mm-dd',
+		changeMonth: true,
+        changeYear: true
+	});
+	$( "#tooltip" ).tooltip();
+</script>

@@ -1,0 +1,63 @@
+<========ERROR========>
+DATE-TIME:2016-05-11 11:57:52
+USER:jayr
+MODULE:USER
+ACTION:SEARCHUSER
+ERROR MSG:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'USERNAME LIKE '%undefined%' OR NAME LIKE '%undefined%' OR USERNAME LIKE '%undefi' at line 1::20
+QUERY:
+<=========END=========>
+
+<========ERROR========>
+DATE-TIME:2016-05-11 12:17:19
+USER:jayr
+MODULE:USER
+ACTION:SEARCHUSER
+ERROR MSG:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'USERNAME LIKE '%jayr%' OR NAME LIKE '%jayr%' OR USERNAME LIKE '%jayr%'' at line 1::22
+QUERY:
+<=========END=========>
+
+<========ERROR========>
+DATE-TIME:2016-05-11 01:47:53
+USER:jayr
+MODULE:USER
+ACTION:SEARCHUSER
+ERROR MSG:Query was empty::37
+QUERY:
+<=========END=========>
+
+<========ERROR========>
+DATE-TIME:2016-05-11 01:48:18
+USER:jayr
+MODULE:USER
+ACTION:SEARCHUSER
+ERROR MSG:Query was empty::37
+QUERY:
+<=========END=========>
+
+<========ERROR========>
+DATE-TIME:2016-05-11 04:39:30
+USER:jayr
+MODULE:CA REQUEST
+ACTION:
+ERROR MSG:Unknown column 'DEP_DESCRIPTION' in 'field list'::29
+QUERY:SELECT DEP_DESCRIPTION FROM FDCFINANCIALS_PC.USERS WHERE 1 GROUP BY DEP_DESCRIPTION
+<=========END=========>
+
+<========ERROR========>
+DATE-TIME:2016-05-11 04:39:53
+USER:jayr
+MODULE:CA REQUEST
+ACTION:
+ERROR MSG:Unknown column 'DEPARTMENTS' in 'field list'::29
+QUERY:SELECT DEPARTMENTS FROM FDCFINANCIALS_PC.USERS WHERE 1 GROUP BY DEP_DESCRIPTION
+<=========END=========>
+
+<========ERROR========>
+DATE-TIME:2016-05-11 04:39:55
+USER:jayr
+MODULE:CA REQUEST
+ACTION:
+ERROR MSG:Unknown column 'DEPARTMENTS' in 'field list'::29
+QUERY:SELECT DEPARTMENTS FROM FDCFINANCIALS_PC.USERS WHERE 1 GROUP BY DEP_DESCRIPTION
+<=========END=========>
+

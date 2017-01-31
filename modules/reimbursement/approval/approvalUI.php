@@ -1,0 +1,3 @@
+<script>
+	getREIMlist();
+</script>

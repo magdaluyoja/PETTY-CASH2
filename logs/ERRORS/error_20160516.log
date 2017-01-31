@@ -1,0 +1,57 @@
+<========ERROR========>
+DATE-TIME:2016-05-16 11:09:46
+USER:jayr
+MODULE:MENU
+ACTION:SEARCHLINK
+ERROR MSG:Query was empty::30
+QUERY:
+<=========END=========>
+
+<========ERROR========>
+DATE-TIME:2016-05-16 11:10:35
+USER:jayr
+MODULE:MENU
+ACTION:SEARCHLINK
+ERROR MSG:Query was empty::31
+QUERY:
+<=========END=========>
+
+<========ERROR========>
+DATE-TIME:2016-05-16 11:12:09
+USER:jayr
+MODULE:MENU
+ACTION:SEARCHLINK
+ERROR MSG:Query was empty::31
+QUERY:
+<=========END=========>
+
+<========ERROR========>
+DATE-TIME:2016-05-16 11:12:39
+USER:jayr
+MODULE:MENU
+ACTION:SEARCHLINK
+ERROR MSG:Query was empty::31
+QUERY:
+<=========END=========>
+
+<========ERROR========>
+DATE-TIME:2016-05-16 12:03:07
+USER:
+MODULE:
+ACTION:
+ERROR MSG:Table 'FDCFINANCIALS_PC.MODULES' doesn't exist::12
+QUERY:SELECT MAX(MODULE_LEVEL) FROM FDCFINANCIALS_PC.MODULES WHERE 1
+<=========END=========>
+
+<========ERROR========>
+DATE-TIME:2016-05-16 02:02:43
+USER:jayr
+MODULE:MENU MAINTENANCE
+ACTION:SAVELINK
+ERROR MSG:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`ORDERING` = ''
+						 	 WHERE ID='fa'' at line 2::55
+QUERY:UPDATE FDCFINANCIALS_PC.MODULES SET `LINK_NAME` = 'FA', `MODULE_GROUP`='', `IS_GROUP`='N', 
+							`MODULE_LEVEL`='1', `LINK`='www', ,`ORDERING` = ''
+						 	 WHERE ID='fa'
+<=========END=========>
+

@@ -1,0 +1,67 @@
+<table border="0" class="tblsearch">
+	<tr>
+		<td class="label_text" align="right">
+			<input type="text" id="txtreimnum" name="txtreimnum" size="25" placeholder = 'TRX No.' class="input_text centered curved30px tooltips" title="Wild Search. Just type any part of the TRX No..">
+			<input type="text" id="txtdate" name="txtdate" size="18" placeholder="Date" class="input_text centered curved30px dates tooltips" title="Saved, Requested, Approved or Released Date">
+		</td>
+		<td align="left">
+			<img src="/PETTY_CASH/images/search1.png" id="btnsearch" class="smallimgbuttons tooltips" title="Search">
+		</td>
+	</tr>
+</table>
+<img src="/PETTY_CASH/images/new.png" id="btnnew" class="imgbuttons shadowed tooltips" title="Create Cash Advance Reimbursement Request."><br>
+<div id="divreimbursement" align="center" style="display:none;">
+	<form id = 'frmreimbursement'>
+		<table border="0" width="45%" class="div-new-trx">
+			<tr>
+				<td  class="td-content-title" colspan="4">
+					Create Reimbursement Request
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<table width="95%" border="0" id="tblpurpose">
+						<tr id="trreimnumber" style="display:none;">
+							<td class="label_text">Trx. Number</td>
+							<td class="label_text">:<a id="lblreimnumber" class="label_text"style="font-size:15px;"></a></td>
+							<td class="label_text"></td>
+						</tr>
+						<tr id="trpurpose_1">
+							<td class="label_text" width="20%">Purpose</td>
+							<td class="label_text">
+								:<?php echo $DATASOURCE->getDropDown($conn_172,PCDBASE," PARTICULARS","input_text curved5px selpurposes","selpurpose_1","*","PARTICULARCODE","PARTICULARDESC","1","data-cnt='1'"); ?>
+								<input type='hidden' id='hidval_1' name='hidval_1'>
+								<input type='hidden' id='hidname_1' name='hidname_1'>
+							</td>
+							<td>
+								<img src="/PETTY_CASH/images/viewrem.png" id="btnviewrem_1" title="View Remarks" class="smallimgbuttons viewrem tooltips" data-curcnt='1'><img src="/PETTY_CASH/images/addtxt.png" id="btnaddpurpose" title="Add Purpose"	class="smallimgbuttons tooltips">
+								<input type="hidden" id="hdnpurposecnt" name="hdnpurposecnt" value="1">
+							</td>
+						</tr>
+					</table>
+					<table width="95%" border="0">
+						<tr>
+							<td class="label_text" width="20%">Amount</td>
+							<td colspan="2" class="label_text">
+								: <a id="totalAmount" style="font-size:15px;">0.00</a>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"></td>
+							<td align="left">
+									<img src="/PETTY_CASH/images/update1.png" 	id="btnupdate" 	class="imgbuttons" style="display:none;">
+									<img src="/PETTY_CASH/images/save1.png" 	id="btnsave" 	class="imgbuttons">
+									<img src="/PETTY_CASH/images/cancel1.png" 	id="btncancel" 	class="imgbuttons">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<input type="hidden" id="disablewhenediting" name="disablewhenediting" value="0">
+	</form>	
+</div>
+
+<div id="divREIMlist"></div>
+<div id="divdebug"></div>
+<br>
