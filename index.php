@@ -3,6 +3,7 @@
 AUTHOR	: 	JAY-R AGUELO MAGADALUYO
 MODULE	:	HOME PAGE
 DATE	:	2015-09-09
+sample change
 *********************************************************************************************************************/
 session_start();
 set_time_limit(0);
