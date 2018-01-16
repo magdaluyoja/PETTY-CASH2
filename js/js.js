@@ -188,7 +188,7 @@ $("document").ready(function(){
 		closeOnEscape:false,
 		dialogClass:"no-close",
 		autoOpen: false,
-		width:150,
+		width:200,
 	});
 	$("#divparticulars").dialog({
 		bgiframe:true, 

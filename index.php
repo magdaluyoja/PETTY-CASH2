@@ -24,7 +24,7 @@ set_time_limit(0);
 	<body>
 	<div id="divheader"></div>
 	<div id="divtopnav"><?php if($_SESSION["PC"]["USERNAME"] != ""){include($_SERVER['DOCUMENT_ROOT']."/PETTY_CASH/menu.php"); }?></div>
-	<div id="divcontent" align="center" id="divcontent" align="center" class="<?php echo $_SESSION["PC"]["MB"]; ?>">
+	<div id="divcontent" align="center" class="<?php if(isset($_SESSION["PC"]["MB"])){echo $_SESSION["PC"]["MB"];}else{ echo "divcontentbg";}; ?>">
 		<?php 
 			if ($_SESSION["PC"]["USERNAME"] == ""){
 				include("login.php");

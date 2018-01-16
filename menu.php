@@ -1,6 +1,6 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT']."/PETTY_CASH/config/config.php");
-$conn	=	newADOConnection("mysqlt");
+$conn	=	newADOConnection("mysqli");
 $RSconn	=	$conn->Connect("localhost","root","");
 //$RSconn	=	$conn->Connect("192.168.250.172","root","");
 if($RSconn == false)

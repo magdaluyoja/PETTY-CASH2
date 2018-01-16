@@ -8,19 +8,22 @@
 			<table>
 				<tr>
 					<td class="label_text">Department</td>
+					<td class="label_text">:</td>
 					<td class="label_text">
-						:<?php echo $DATASOURCE->getDropDown($conn_172,PCDBASE,"DEPARTMENTS","input_text curved5px","seldep","DEP_DESCRIPTION","DEP_DESCRIPTION","DEP_DESCRIPTION","1 ORDER BY DEP_DESCRIPTION","");?>
+						<?php echo $DATASOURCE->getDropDown($conn_172,PCDBASE,"DEPARTMENTS","input_text curved5px","seldep","DEP_DESCRIPTION","DEP_DESCRIPTION","DEP_DESCRIPTION","1 ORDER BY DEP_DESCRIPTION","");?>
 					</td>
 				</tr>
 				<tr>
 					<td class="label_text">Approver</td>
+					<td class="label_text">:</td>
 					<td class="label_text">
-						:<select id="selapp" name="selapp" class="input_text curved5px">
+						<select id="selapp" name="selapp" class="input_text curved5px">
 							<option value=""><-- Please Select --></option>
 						</select>
 					</td>
 				</tr>
 				<tr>
+					<td class="label_text">&nbsp;</td>
 					<td class="label_text">&nbsp;</td>
 					<td class="label_text">
 						<img src="/PETTY_CASH/images/set.png" id="btnset" class="imgbuttons shadowed tooltips">

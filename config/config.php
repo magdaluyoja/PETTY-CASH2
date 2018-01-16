@@ -1,6 +1,6 @@
 <?php
 	include($_SERVER['DOCUMENT_ROOT']."/PETTY_CASH/adodb5/adodb.inc.php");
-//	$conn_171	=	newADOConnection("mysqlt");
+//	$conn_171	=	newADOConnection("mysqli");
 //	$RSconn_171	=	$conn_171->Connect("192.168.250.171","root","");
 //	if($RSconn_171 == false)
 //	{
@@ -10,7 +10,7 @@
 //					});
 //			  </script>";
 //	}
-	$conn_10	=	newADOConnection("mysqlt");
+	$conn_10	=	newADOConnection("mysqli");
 //	$RSconn_10	=	$conn_10->Connect("192.168.250.10","root","");
 	// $RSconn_10	=	$conn_10->Connect("192.168.250.10","root","");
 	// if($RSconn_10 == false)
@@ -22,10 +22,11 @@
 	// 		  </script>";
 	// }
 	
-	$conn_172	=	newADOConnection("mysqlt");
+	$conn_172	=	newADOConnection("mysqli");
 //	$RSconn_172	=	$conn_172->Connect("192.168.250.172","root","");
 //	$RSconn_172	=	$conn_172->Connect("192.168.250.17","root","");
 	$RSconn_172	=	$conn_172->Connect("localhost","root","");
+// $RSconn_172	=	$conn_172->Connect("192.168.250.171","root","");
 	if($RSconn_172 == false)
 	{
 		echo "<script>

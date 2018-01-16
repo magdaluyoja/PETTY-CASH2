@@ -8,11 +8,13 @@
 			<table>
 				<tr>
 					<td class="label_text">Approver</td>
+					<td class="label_text">:</td>
 					<td class="label_text">
-					:<?php echo $DATASOURCE->getDropDown($conn_172,PCDBASE,"USERS","input_text curved5px","selapp","USERID,NAME","USERID","NAME","DEPT_INITIAL = '{$_SESSION["PC"]['DEP']}' AND USERLEVEL = 'Supervisor'","");?>
+						<?php echo $DATASOURCE->getDropDown($conn_172,PCDBASE,"USERS","input_text curved5px","selapp","USERID,NAME","USERID","NAME","DEPT_INITIAL = '{$_SESSION["PC"]['DEP']}' AND USERLEVEL = 'Supervisor'","");?>
 					</td>
 				</tr>
 				<tr>
+					<td class="label_text"></td>
 					<td class="label_text" colspan="2" align="center">
 						<img src="/PETTY_CASH/images/set.png" id="btnset" class="imgbuttons shadowed tooltips">
 						<img src="/PETTY_CASH/images/unset.png" id="btnunset" class="imgbuttons shadowed tooltips">

@@ -53,7 +53,7 @@
 	}
 ?>
 <div id="demo-header" class="shadowed curved5px">
-	<a id="login-link" title="Login"href="#login">&nbsp;&nbsp;USER LOGIN</a>
+	<span id="login-link" class="pointer" title="Login">&nbsp;&nbsp;USER LOGIN</span>
 	<div id="login-panel" class="shadowed">
 		<table width="100%">
 			<tr>

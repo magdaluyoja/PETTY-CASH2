@@ -13,7 +13,7 @@ if($action == "SEARCHLINK")
 	$PAGENO		=	$_GET["PAGENO"];
 	if($LINK != undefined)
 	{
-		$LINK_Q		=	" AND ID LIKE '%$LINK%' OR LINK_NAME LIKE '%$LINK%'";
+		$LINK_Q		=	" AND ID LIKE '%$LINK%' OR LINK_NAME LIKE '%$LINK%' OR MODULE_GROUP LIKE '%$LINK%'";
 	}
 	if($MAINQUERY != undefined)
 	{

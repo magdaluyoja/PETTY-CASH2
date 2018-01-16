@@ -15,14 +15,14 @@ set_time_limit(0);
 		<link 		href=	"/PETTY_CASH/styles/styles.css"rel="stylesheet">
 		<script 	src	=	"/PETTY_CASH/jquery/jquery-2.1.3.min.js"></script>
 		<?php include($_SERVER['DOCUMENT_ROOT']."/PETTY_CASH/js/jsUI.php") ?>	
-		<script 	src	=	"/PETTY_CASH/js/js.js"></script>
+		<script 	src	=	"/PETTY_CASH/js/js.js?v=1"></script>
 		<script 	src	=	"theme.js"></script>
 	</head>
 	<body>
 		<div id="divheader"></div>
 		<div id="divtopnav"><?php include($_SERVER['DOCUMENT_ROOT']."/PETTY_CASH/menu.php");?></div>
 		<div id="divcontent" align="center" class="<?php echo $_SESSION["PC"]["MB"]; ?>">
-			<table width="100%" border="0"  class="td-main-content <?php echo $_SESSION["PC"]["CB"]; ?>">
+			<table width="100%" border="0"  class="<?php echo $_SESSION["PC"]["CB"]; ?>">
 				<tr>
 					<td class="td-page-title ui-widget-header">CASH ADVANCE THEME SETTINGS</td>
 				</tr>

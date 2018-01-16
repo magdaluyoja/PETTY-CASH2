@@ -32,7 +32,7 @@
 	</form>	
 	<table class="div-new-trx" width="80%" border="0">
 		<tr>
-			<td  class="td-content-title" colspan="4">Summary</td>
+			<td  class="td-content-title" colspan="2">Summary</td>
 		</tr>
 		<tr class="label_text tr-ca-list-dtls">
 			<td class="" width="50%">Reimbursement Amount</td>

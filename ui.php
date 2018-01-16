@@ -35,9 +35,10 @@
 	</div>
 </div>
 
-<div id="divloader" align="center" style="display:none;" class="divdialogs">
+<div id="divloader" align="center" class="divdialogs">
 	<br>
-	<img src="<?php $_SERVER['DOCUMENT_ROOT']; ?>/FDC_VOIS/images/loading.gif">
+	<!--<img src="/PETTY_CASH/images/animated-loading.gif"style="height:100px;">-->
+	<img src="/PETTY_CASH/images/loading2.GIF">
 	<br><a id="loadingmsg"></a><br>Please wait...
 </div>
 <div id="divparticulars"></div>

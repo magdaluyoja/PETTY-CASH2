@@ -17,13 +17,14 @@ $("document").ready(function(){
 		var purposecntnew	=	purposecntold + 1;
 		var purposetr		=	"";
 		purposetr	=	"<tr id='trpurpose_"+purposecntnew+"'>";
-		purposetr	+=		"<td class='label_text'><input type='hidden' id='hidremark_"+purposecntnew+"' name='hidremark_"+purposecntnew+"'></td>";
-		purposetr	+=		"<td class='label_text'>";
-		purposetr	+=			":<select name='selpurpose_"+purposecntnew+"' id='selpurpose_"+purposecntnew+"' class='input_text curved5px selpurposes' data-cnt='"+purposecntnew+"'>";
+		purposetr	+=		"<td><input type='hidden' id='hidremark_"+purposecntnew+"' name='hidremark_"+purposecntnew+"'></td>";
+		purposetr	+=		"<td>:</td>";
+		purposetr	+=		"<td>";
+		purposetr	+=			"<select name='selpurpose_"+purposecntnew+"' id='selpurpose_"+purposecntnew+"' class='input_text curved5px selpurposes' data-cnt='"+purposecntnew+"'>";
 		purposetr	+=			"</select>";
 		purposetr	+=		"</td>";
 		purposetr	+=		"<td>";
-		purposetr	+=			"<img src='/PETTY_CASH/images/viewrem.png' 	id='btnviewrem_"+purposecntnew+"' 	title='View Remarks' 	class='smallimgbuttons viewrem tooltips' 	data-curcnt='"+purposecntnew+"'>";
+		purposetr	+=			"<img src='/PETTY_CASH/images/viewrem.png' 	id='btnviewrem_"+purposecntnew+"' 	title='View Remarks' 	class='smallimgbuttons viewrem tooltips' 	data-curcnt='"+purposecntnew+"'>&nbsp;";
 		purposetr	+=			"<img src='/PETTY_CASH/images/remove.png' 	id='btnviewrem_"+purposecntnew+"' 	title='Remove Purpose' 	class='smallimgbuttons rempurpose tooltips'	data-cnt='"+purposecntnew+"'>";
 		purposetr	+=		"</td>";
 		purposetr	+=	"</tr>";

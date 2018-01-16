@@ -11,10 +11,9 @@
 </table>
 
 <img src="/PETTY_CASH/images/new.png" id="btnnew" class="imgbuttons shadowed tooltips" title="Create Cash Advance Request."><br>
-
-<div id="divCAreq" style="display:none;">
+<div id="divCAreq">
 	<form id = 'frmCAreq'>
-		<table border="0" width="45%" class="div-new-trx">
+		<table border="0" class="div-new-trx">
 			<tr>
 				<td  class="td-content-title" colspan="4">
 					Create Cash Advance Request
@@ -22,37 +21,40 @@
 			</tr>
 			<tr>
 				<td align="center">
-					<table width="95%" border="0" id="tblpurpose">
+					<table border="0" id="tblpurpose" class="label_text">
 						<tr id="trcanumber" style="display:none;">
-							<td class="label_text">C.A. Number</td>
-							<td class="label_text">:<a id="lblcanumber" class="label_text" style="font-size:15px;"></a></td>
-							<td class="label_text"></td>
+							<td>C.A. Number</td>
+							<td>:</td>
+							<td id="lblcanumber"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>Amount</td>
+							<td>:</td>
+							<td colspan="2">
+								<input type="text" name="txtamount" id="txtamount" size="9" class="input_text curved5px right">
+							</td>
 						</tr>
 						<tr id="trpurpose_1">
-							<td class="label_text" width="20%">Purpose</td>
-							<td class="label_text">
-								:<?php echo $DATASOURCE->getDropDown($conn_172,PCDBASE,"PARTICULARS","input_text curved5px selpurposes","selpurpose_1","*","PARTICULARCODE","PARTICULARDESC","1","data-cnt='1'"); ?>
+							<td>Purpose</td>
+							<td>:</td>
+							<td>
+								<?php echo $DATASOURCE->getDropDown($conn_172,PCDBASE,"PARTICULARS","input_text curved5px selpurposes","selpurpose_1","*","PARTICULARCODE","PARTICULARDESC","1","data-cnt='1'"); ?>
 								<input type="hidden" id="hidremark_1" name="hidremark_1">
 							</td>
 							<td>
-								<img src="/PETTY_CASH/images/viewrem.png" id="btnviewrem_1" title="View Remarks" class="smallimgbuttons viewrem tooltips" data-curcnt='1'><img src="/PETTY_CASH/images/addtxt.png" id="btnaddpurpose" title="Add Purpose"	class="smallimgbuttons tooltips">
+								<img src="/PETTY_CASH/images/viewrem.png" id="btnviewrem_1" title="View Remarks" class="smallimgbuttons viewrem tooltips" data-curcnt='1'>
+								<img src="/PETTY_CASH/images/addtxt.png" id="btnaddpurpose" title="Add Purpose"	class="smallimgbuttons tooltips">
 								<input type="hidden" id="hdnpurposecnt" name="hdnpurposecnt" value="1">
 							</td>
 						</tr>
 					</table>
-					<table width="95%" border="0">
+					<table border="0">
 						<tr>
-							<td class="label_text" width="20%">Amount</td>
-							<td colspan="2" class="label_text">
-								:<input type="text" name="txtamount" id="txtamount" size="9" class="input_text curved5px" style="text-align:right;">
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2"></td>
-							<td align="left">
-									<img src="/PETTY_CASH/images/update1.png" 	id="btnupdate" 	class="imgbuttons" style="display:none;">
-									<img src="/PETTY_CASH/images/save1.png" 	id="btnsave" 	class="imgbuttons">
-									<img src="/PETTY_CASH/images/cancel1.png" 	id="btncancel" 	class="imgbuttons">
+							<td>
+								<img src="/PETTY_CASH/images/update1.png" 	id="btnupdate" 	class="imgbuttons" style="display:none;">
+								<img src="/PETTY_CASH/images/save1.png" 	id="btnsave" 	class="imgbuttons">
+								<img src="/PETTY_CASH/images/cancel1.png" 	id="btncancel" 	class="imgbuttons">
 							</td>
 						</tr>
 					</table>
